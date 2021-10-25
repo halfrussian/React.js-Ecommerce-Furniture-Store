@@ -15,7 +15,7 @@ import {
 
 const initialState = {
 
-  isSidebareOpen: false
+  isSidebarOpen: false
 }
 
 const ProductsContext = React.createContext()
