@@ -33,7 +33,7 @@ function App() {
        <Checkout />
      </Route>
 
-     <Route exact path='*'>
+     <Route exact path='/error'>
        <Error />
      </Route>
 

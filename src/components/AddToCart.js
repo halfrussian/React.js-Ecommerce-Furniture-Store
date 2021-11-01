@@ -5,8 +5,29 @@ import { FaCheck } from 'react-icons/fa'
 import { useCartContext } from '../context/cart_context'
 import AmountButtons from './AmountButtons'
 
-const AddToCart = () => {
-  return <h4>addToCart </h4>
+const AddToCart = ({product}) => {
+
+  const { id, stock, colors} = product;
+  // const [amount, setAmount] = useState(0)
+  const [mainColor, setMainColors] = useState(colors[0]);
+
+  return (
+    <Wrapper>
+      <div className="colors">
+        <span>colors : </span>
+        <div>{
+          colors.map((color, index)=> {
+            return <button key ={index} className='color-btn' style={{background: color}}>
+              {index}
+            </button>
+
+          })
+          }</div>
+      </div>
+      <div className="btn-container"></div>
+    </Wrapper>
+    
+    )
 }
 
 const Wrapper = styled.section`
