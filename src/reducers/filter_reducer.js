@@ -1,3 +1,4 @@
+import { act } from '@testing-library/react'
 import {
   LOAD_PRODUCTS,
   SET_LISTVIEW,
@@ -50,9 +51,16 @@ const filter_reducer = (state, action) => {
     if(sort ==='name-z'){
       tempProducts = tempProducts.sort((a, b)=> {return b.name.localeCompare(a.name)})
     }
-
-
     return {...state, filtered_products:tempProducts}
+    
+  }
+
+  if(action.type === UPDATE_FILTERS) {
+    const {name, value} = action.payload
+    return {...state, filters:{...state.filters, [name]:value}}
+  }
+  if(action.type === FILTER_PRODUCTS) {
+    return {...state} 
   }
   throw new Error(`No Matching "${action.type}" - action type`)
 }
