@@ -5,7 +5,9 @@ import { getUniqueValues, formatPrice } from '../utils/helpers'
 import { FaCheck } from 'react-icons/fa'
 
 const Filters = () => {
-  return <h4>filters</h4>
+  return (
+    
+  )
 }
 
 const Wrapper = styled.section`
