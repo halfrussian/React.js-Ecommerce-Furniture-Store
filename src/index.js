@@ -12,7 +12,9 @@ ReactDOM.render(
 
 <ProductsProvider>
   <FilterProvider>
-  <App />
+    <CartProvider>
+      <App />
+    </CartProvider>
   </FilterProvider>
 </ProductsProvider>,
 

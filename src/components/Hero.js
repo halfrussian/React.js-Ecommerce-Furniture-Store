@@ -10,7 +10,7 @@ const Hero = () => {
         <article className='content'>
           <h1>
             design your <br />
-            confort zone
+            comfort zone
           </h1>
           <p>Lorem ipsum dolor sit amet
              consectetur adipisicing elit.

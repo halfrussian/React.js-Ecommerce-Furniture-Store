@@ -9,7 +9,9 @@ import CartTotals from './CartTotals'
 const CartContent = () => {
   return <h4>cart content </h4>
 }
-const Wrapper = styled.section`
+const Wrapper = styled.section` else {
+  return cartItem 
+ }
   .link-container {
     display: flex;
     justify-content: space-between;
