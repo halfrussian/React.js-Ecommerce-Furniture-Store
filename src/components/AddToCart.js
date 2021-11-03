@@ -6,7 +6,7 @@ import { useCartContext } from '../context/cart_context'
 import AmountButtons from './AmountButtons'
 
 const AddToCart = ({product}) => {
-
+console.log('hello')
   const { id, stock, colors} = product;
   const [mainColor, setMainColors] = useState(colors[0]);
   const [amount, setAmount] = useState(1);
