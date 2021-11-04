@@ -75,15 +75,13 @@ const cart_reducer = (state, action) => {
           return {...item, amount:newAmount}
 
         }
-     } else {
-       return item
-     }
+     } return item
    })
    
   return {...state, cart:tempCart}
 }
 
-if(action.type == COUNT_CART_TOTALS) {
+if(action.type === COUNT_CART_TOTALS) {
   const {total_items, total_amount} = state.cart.reduce((total, cartItem)=> {
 
     const {amount, price} = cartItem

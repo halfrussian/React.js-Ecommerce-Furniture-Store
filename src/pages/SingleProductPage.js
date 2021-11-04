@@ -26,6 +26,7 @@ fetchSingleProduct,}
 
 useEffect(()=> {
 fetchSingleProduct(`${url}${id}`)
+  
 }, [id])
 
 useEffect(()=> {
